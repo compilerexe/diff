@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="icon" type="image/ico" href="{{ asset('images/logo-axis.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dev Axis Wake {{ ucfirst(config('country')->country_name) }}</title>
+    <title>Axis Wake {{ ucfirst(config('country')->country_name) }}</title>
 
     <!-- START SEO -->
     <meta name="author" content="Axis Wake Asia">
@@ -30,7 +30,6 @@
 
     <link rel="stylesheet" href="{{ asset('template/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/boleiro.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('template/css/custom.css?v=1.1.6') }}">
 
@@ -177,7 +176,6 @@
 <script src="{{ asset('plugins/player-vimeo.js') }}" async></script>
 <script src="{{ asset('plugins/sweetalert.min.js') }}"></script>
 <script src="{{ asset('plugins/bootstrap-datepicker.min.js') }}"></script>
-<script src="{{ asset('template/js/lab-section.js') }}"></script>
 
 @stack ('scripts')
 

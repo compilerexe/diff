@@ -2,21 +2,7 @@
 	$(document).ready(function() {
 		"use strict";
 		
-		//BOAT SECTION EXPLORE BUTTON MOBILE
-		function mobileFadeInR (id) {
-			$.each(['#a20-btn','#a22-btn','#a24-btn','#t22-btn','#t23-btn'],function (index, value) {
-				$(value).removeClass('wow');
-				$(value).removeClass('fadeInRight');
-			});
-			$(id).addClass('wow');
-			$(id).addClass('fadeInRight');
-		};
-
-		/*$('#a20').on('click', mobileFadeInR('#a20-btn'));
-		$('#a22').on('click', mobileFadeInR('#a22-btn'));
-		$('#a24').on('click', mobileFadeInR('#a24-btn'));
-		$('#t22').on('click', mobileFadeInR('#t22-btn'));
-		$('#t23').on('click', mobileFadeInR('#t23-btn'));*/
+		
 		
 		// TAB BORDER EFFECT
 		var nav = $('.nav-tabs');
@@ -255,24 +241,15 @@
 	  
 	 
 		// MEGA MENU
-		$('.mega-menu').on('mouseover',function() { 
-			$('.mega-dropdown').addClass('open');
+		$('.mega-menu').hover(function() { 
+        $('.mega-dropdown').toggleClass('open');
 		});
-		$('.mega-menu').on('mouseout',function() { 
-      $('.mega-dropdown').removeClass('open');
+		
+		$('.mega-dropdown').hover(function() { 
+        $('.mega-dropdown').toggleClass('open');
 		});
-		$('.mega-dropdown').on('mouseover',function() { 
-      $('.mega-dropdown').addClass('open');
-		});
-		$('.mega-dropdown').on('mouseout',function() { 
-      $('.mega-dropdown').removeClass('open');
-		});
-		$('#boat-nav-bar').on('click',function() { 
-			$('.sidebar-dropdown').toggleClass('sidebar-dropdown-open');
-		});
-		$('#backBtn-to-sidebar').on('click', function() {
-			$('.sidebar-dropdown').toggleClass('sidebar-dropdown-open');
-		});
+		
+		
 		
 		
 		// STELLAR PARALLAX BG
@@ -296,10 +273,10 @@
 			$(this).toggleClass('open');
 			$('body').toggleClass('overflow-hidden');
 			$('.side-menu').toggleClass('side-menu-open');
-			//$('.header').toggleClass('side-menu-open');
-			//$('.topbar').toggleClass('side-menu-open');
-			$('.sidebar-dropdown').removeClass('sidebar-dropdown-open');
+			$('.header').toggleClass('side-menu-open');
+			$('.topbar').toggleClass('side-menu-open');
 		});
+		
 		
 
 		// SEARCH 
@@ -478,7 +455,7 @@
 			}
     	});
 	
-
+	
 	
 		// WOW ANIMATION 
 		wow = new WOW(
@@ -526,58 +503,58 @@
 	
 	
 		// TEXT TYPING
-		var whoAmI = ["Designer", "Developer", "and Engineer"];
-		var textBox = document.getElementById('text');
-		var cursor = document.createElement('span');
-		cursor.innerHTML = "&nbsp;";
-		textBox.appendChild(cursor);
+		// var whoAmI = ["Designer", "Developer", "and Engineer"];
+		// var textBox = document.getElementById('text');
+		// var cursor = document.createElement('span');
+		// cursor.innerHTML = "&nbsp;";
+		// textBox.appendChild(cursor);
 
-		var letters = [];
-		function write(i, j, arr){  
-		  var who = arr[i];
-		  if(who === undefined) return;
-		  if(j === who.length){
-			if(i === arr.length - 1){
-			  setTimeout(function(){
-				letters[letters.length-1].style.border = "none";
-			  }, 1500);
-			  return;
-			}
-			setTimeout(function(){
-			  del(i, arr);
-			}, 1000);
-			return;
-		  }
-
-		  var c = document.createElement('span');
-		  c.innerHTML = who.charAt(j)
-		  letters.push(c);
-		  textBox.appendChild(c);
-
-		  setTimeout(function(){
-			j++;
-			write(i,j, arr);
-		  }, Math.random() * 100 + 70);
-		}
-
-		function del(i,arr){
-		  if(letters.length < 1){
-			i++;
-			setTimeout(function(){
-			  write(i,0, arr);
-			}, 500);
-			return;
-		  }
-		  var c = letters.pop();
-		  setTimeout(function(){
-			textBox.removeChild(c);
-			del(i, arr);
-		  }, Math.random() * 100 + 30);
-		}
-
-		setTimeout(function(){
-		  write(0,0, whoAmI);
-		}, 1500);
+		// var letters = [];
+		// function write(i, j, arr){
+		//   var who = arr[i];
+		//   if(who === undefined) return;
+		//   if(j === who.length){
+		// 	if(i === arr.length - 1){
+		// 	  setTimeout(function(){
+		// 		letters[letters.length-1].style.border = "none";
+		// 	  }, 1500);
+		// 	  return;
+		// 	}
+		// 	setTimeout(function(){
+		// 	  del(i, arr);
+		// 	}, 1000);
+		// 	return;
+		//   }
+		//
+		//   var c = document.createElement('span');
+		//   c.innerHTML = who.charAt(j)
+		//   letters.push(c);
+		//   textBox.appendChild(c);
+		//
+		//   setTimeout(function(){
+		// 	j++;
+		// 	write(i,j, arr);
+		//   }, Math.random() * 100 + 70);
+		// }
+		//
+		// function del(i,arr){
+		//   if(letters.length < 1){
+		// 	i++;
+		// 	setTimeout(function(){
+		// 	  write(i,0, arr);
+		// 	}, 500);
+		// 	return;
+		//   }
+		//   var c = letters.pop();
+		//   setTimeout(function(){
+		// 	textBox.removeChild(c);
+		// 	del(i, arr);
+		//   }, Math.random() * 100 + 30);
+		// }
+		//
+		// setTimeout(function(){
+		//   write(0,0, whoAmI);
+		// }, 1500);
 	
 	
 	

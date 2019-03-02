@@ -1,146 +1,114 @@
 <aside class="side-menu">
-        <div class="inner">
-            <div class="top-btn">
-                <a href="">BUILD A BOAT</a>
-                <a href="">LOGIN</a>
-            </div>
-            <ul class="site-nav">
+    <div class="inner">
+        <a href="{{ clientNavbarURL(config('country')->country_name, '/') }}">
+            <img src="{{ asset('images/logo-axis.png') }}" alt="Image" style="height: 32px; object-fit: contain;">
+        </a>
+        <ul class="language" style="margin-top: 20px;">
+            @if (config('country')->country_name == 'asia')
                 <li class="nav-item">
-                    <a id="boat-nav-bar" class="nav-link">
-                        <p>BOATS</p>
-                        <p>></p>
+                    <a href="#" class="nav-link" data-toggle="modal"
+                       data-target="#country-modal">
+                        <img src="{{ asset('images/icons/earth.png') }}" alt="image"
+                             style="height: 16px; width: 16px;">
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="https://www.axiswakeasia.com/asia/about-axis" class="nav-link">
-                        <p>ABOUT AXIS</p>
-                        <p>></p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.axiswakeasia.com/asia/news" class="nav-link">
-                        <p>NEWS AND EVENTS</p>
-                        <p>></p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.axiswakeasia.com/asia/find-a-dealer" class="nav-link">
-                        <p>FIND A DEALER</p>
-                        <p>></p>
-                    </a>
-                </li>
-            </ul>
-            <div class="copyright">
-                <a href="#">
-                    <img src="https://www.axiswakeasia.com/images/malibu-logo.png" alt="Image" class="logo">
+            @else
+                @if (config('country')->lang_switch == 1)
+                    <li class="nav-item">
+                        <a href="{{ url(urlCountryReplace(config('country')->country_name).'/set/lang/local') }}"
+                           class="nav-lang">
+                            {{ config('country')->short_name }}
+                        </a>
+                        <span class="nav-lang" style="padding: 0 5px 0 5px; color: gray;">|</span>
+                        <a href="{{ url(urlCountryReplace(config('country')->country_name).'/set/lang/en') }}"
+                           class="nav-lang">
+                            EN
+                        </a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="{{ config('country')->icon }}" alt="image"
+                                 style="height: 16px; width: 16px;">
+                        </a>
+                    </li>
+                @endif
+            @endif
+        </ul>
+        <ul class="site-nav">
+            <li class="nav-item">
+                <a href="{{ clientNavbarURL(config('country')->country_name, '/all-boats') }}" class="nav-link">
+                    {{ lang_navbar()->boats }}
                 </a>
-                <a href="https://www.axiswakeasia.com">
-                    <img src="https://www.axiswakeasia.com/images/logo-axis.png" alt="Image" style="height: 32px; object-fit: contain;">
+            </li>
+            <li class="nav-item">
+                <a href="{{ clientNavbarURL(config('country')->country_name, '/about-axis') }}" class="nav-link">
+                    {{ lang_navbar()->about_axis }}
                 </a>
-            </div>
-            <ul class="social-media" style="padding-bottom: 50px;">
+            </li>
+            <li class="nav-item">
+                <a href="{{ clientNavbarURL(config('country')->country_name, '/news') }}" class="nav-link">
+                    {{ lang_navbar()->news_and_events }}
+                </a>
+            </li>
+            <li class="nav-item">
+                @if (config('country')->country_name == 'asia')
+                    <a href="{{ clientNavbarURL(config('country')->country_name, '/find-a-dealer') }}" class="nav-link">
+                        {{ lang_navbar()->find_a_dealer }}
+                    </a>
+                @else
+                    <a href="{{ clientNavbarURL(config('country')->country_name, '/contact-dealer') }}"
+                       class="nav-link">
+                        {{ lang_navbar()->contact_dealer }}
+                    </a>
+                @endif
+            </li>
+        </ul>
+        <ul class="social-media" style="padding-bottom: 120px;">
 
+            <li>
+                <a href="https://www.facebook.com/malibuboats.asia/" target="_blank">
+                    <img alt="image" class="icon svg" src="{{ asset('images/icons/facebook.png') }}"
+                         style="height: 32px;"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/malibuboats.asia/" target="_blank">
+                    <img alt="image" class="icon svg" src="{{ asset('images/icons/instagram.png') }}"
+                         style="height: 32px;"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://vimeo.com/axiswake" target="_blank">
+                    <img alt="image" class="icon svg" src="{{ asset('images/icons/vimeo.png') }}"
+                         style="height: 32px;"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/axiswake" target="_blank">
+                    <img alt="image" class="icon svg" src="{{ asset('images/icons/twitter.png') }}"
+                         style="height: 32px;"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/axiswake" target="_blank">
+                    <img alt="image" class="icon svg" src="{{ asset('images/icons/youtube.png') }}"
+                         style="height: 32px;"/>
+                </a>
+            </li>
+        </ul>
 
-                <li>
-                    <a href="https://www.facebook.com/malibuboats.asia/" target="_blank">
-                        <img alt="" class="icon svg" src="https://www.axiswakeasia.com/images/icons/facebook.png" style="height: 32px;" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/malibuboats.asia/" target="_blank">
-                        <img alt="" class="icon svg" src="https://www.axiswakeasia.com/images/icons/instagram.png"
-                            style="height: 32px;" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://vimeo.com/axiswake" target="_blank">
-                        <img alt="" class="icon svg" src="https://www.axiswakeasia.com/images/icons/vimeo.png" style="height: 32px;" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/axiswake" target="_blank">
-                        <img alt="" class="icon svg" src="https://www.axiswakeasia.com/images/icons/twitter.png" style="height: 32px;" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/axiswake" target="_blank">
-                        <img alt="" class="icon svg" src="https://www.axiswakeasia.com/images/icons/youtube.png" style="height: 32px;" />
-                    </a>
-                </li>
-            </ul>
+        <span class="copyright">
+            <a href="https://www.malibuboats.com" target="_blank">
+                <img src="{{ asset('images/malibu-logo.png') }}" alt="Image" class="logo">
+            </a>
+            <br>
+            <a href="https://www.axiswake.com" target="_blank">
+                <img src="{{ asset('images/logo-axis.png') }}" alt="Image" class="logo">
+            </a>
+        </span>
 
-        </div>
-        <!-- end inner -->
-        <div class="sidebar-dropdown">
-            <div class="all-boat">
-                <h3 id="backBtn-to-sidebar">&#60; Menu</h3>
-            </div>
-            <!--<div class="sidebar-boats">
-                <img src="https://www.axiswakeasia.com/images/boats/2019/small/A20_Rear_Port-s.png" alt="">
-                <div class="caption-boat">
-                    <h2>A20</h2>
-                    <p>Axis Wake</p>
-                </div>
-                <div class="btn-boat">
-                    <a>View</a>
-                    <a>Build</button>
-                </div>
-            </div>-->
-            <div class="sidebar-boats">
-                <img src="https://www.axiswakeasia.com/images/boats/2019/small/A20_Rear_Port-s.png" alt="">
-                <div class="caption-boat">
-                    <h2>A20</h2>
-                    <p>Axis Wake</p>
-                </div>
-                <div class="btn-boat">
-                    <a href="https://www.axiswakeasia.com/asia/boat/a20">View</a>
-                    <a href="https://www.axiswake.com/boat-configurator">Build</a>
-                </div>
-            </div>
-            <div class="sidebar-boats">
-                <img src="https://www.axiswakeasia.com/images/boats/2019/small/A22_Rear_Port-s.png" alt="">
-                <div class="caption-boat">
-                    <h2>A22</h2>
-                    <p>Axis Wake</p>
-                </div>
-                <div class="btn-boat">
-                    <a href="https://www.axiswakeasia.com/asia/boat/a22">View</a>
-                    <a href="https://www.axiswake.com/boat-configurator">Build</a>
-                </div>
-            </div>
-            <div class="sidebar-boats">
-                <img src="https://www.axiswakeasia.com/images/boats/2019/small/A24_Rear_Port-s.png" alt="">
-                <div class="caption-boat">
-                    <h2>A24</h2>
-                    <p>Axis Wake</p>
-                </div>
-                <div class="btn-boat">
-                    <a href="https://www.axiswakeasia.com/asia/boat/a24">View</a>
-                    <a href="https://www.axiswake.com/boat-configurator">Build</a>
-                </div>
-            </div>
-            <div class="sidebar-boats">
-                <img src="https://www.axiswakeasia.com/images/boats/2019/small/T22-rear-port-s.png" alt="">
-                <div class="caption-boat">
-                    <h2>T22</h2>
-                    <p>Axis Wake</p>
-                </div>
-                <div class="btn-boat">
-                    <a href="https://www.axiswakeasia.com/asia/boat/t22">View</a>
-                    <a href="https://www.axiswake.com/boat-configurator">Build</a>
-                </div>
-            </div>
-            <div class="sidebar-boats">
-                <img src="https://www.axiswakeasia.com/images/boats/2019/small/T23-rear-port-s.png" alt="">
-                <div class="caption-boat">
-                    <h2>T23</h2>
-                    <p>Axis Wake</p>
-                </div>
-                <div class="btn-boat">
-                    <a href="https://www.axiswakeasia.com/asia/boat/t23">View</a>
-                    <a href="https://www.axiswake.com/boat-configurator">Build</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-    <!-- end side-menu -->
+    </div>
+    <!-- end inner -->
+</aside>
+<!-- end side-menu -->
