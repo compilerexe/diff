@@ -1,0 +1,109 @@
+#axis-lab {
+    margin: 50px 0;
+    background: #e10019;
+}
+.master {
+    color: #fff;
+    background: #e10019;
+}
+.lab-master-slidebg {
+    position: relative;
+    top: -50px;
+    padding: 100px 0;
+    height: 120vh;
+    transform: scale(1);
+    background:linear-gradient(to bottom,#e10019 0,#fe4e00 50%,#e10019 100%);
+}
+.minor {
+    color: #fff;
+}
+.lab-slider-content h3 {
+    color: #e10019;
+}
+.tp-bgimg.defaultimg {
+    filter: grayscale(40%) brightness(35%);
+}
+.erinyen .tp-tab-title {
+    color: #e10019;
+}
+.tparrows:before {
+    color: #ccc;
+}
+.tp-tab-mask {
+    overflow: visible !important;
+}
+.axis-lab-nav {
+    position: absolute;
+    bottom: 120px;
+    left: 50px;
+    z-index: 50 !important;
+    visibility: visible !important;
+    color: #fff;
+}
+.axis-item {
+    position: relative;
+    width: 180px;
+}
+.axis-item img {
+    position: relative;
+    transform: translateY(-120px);
+    width: 100%;
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+.axis-item:hover img {
+    transform: translateY(-100px);
+    opacity: 1;
+}
+.axis-item p {
+    position: relative;
+    bottom: 100px;
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+.axis-item.tp-caption {
+    visibility: visible !important;
+    cursor: pointer;
+}
+.axis-a20 {left: 0px; top: 20px;}
+.axis-a22 {left: 180px;}
+.axis-a24 {left: 360px;}
+.axis-t22 {left: 540px;}
+.axis-t23 {left: 720px;}
+
+.axis-x-close {
+    color: red;
+    cursor: pointer;
+    font-size: 60px;
+    line-height: 80px;
+    padding-left: 15px;
+    text-align: center;
+    background-color: #fff;
+    display: none;
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .lab-master-slidebg {
+        transform: scale(1);
+        padding: 0;
+        top: 50px;
+    }
+}
+@media all and (max-width: 480px) {
+    .lab-master-slidebg {
+        transform: scale(2);
+        top: 200px;
+    }
+}
+
+@media all and (max-width: 960px) {
+    .axis-lab-nav,.axis-x-close {
+        display: none !important;
+    }
+}
+@media all and (min-width: 1600px) {
+    .lab-master-slidebg {
+        transform: scale(1);
+        padding: 0px 0;
+        top: 0px;
+    }
+}

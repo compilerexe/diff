@@ -1,0 +1,799 @@
+@font-face {
+    font-family: 'AtlasGrotesk-Regular';
+    font-display: auto;
+    src: local('AtlasGrotesk-Regular'), url('../../fonts/atlas_grotesk/AtlasGrotesk-Regular.otf');
+}
+@font-face {
+    font-family: 'AtlasGrotesk-Regular';
+    font-display: block;
+    src: local('AtlasGrotesk-Regular'), url('../../fonts/atlas_grotesk/AtlasGrotesk-Regular.otf');
+}
+@font-face {
+    font-family: 'AtlasGrotesk-Regular';
+    font-display: swap;
+    src: local('AtlasGrotesk-Regular'), url('../../fonts/atlas_grotesk/AtlasGrotesk-Regular.otf');
+}
+
+@font-face {
+    font-family: 'AtlasTypewriter-Bold';
+    font-display: auto;
+    src: local('AtlasTypewriter-Bold'), url('../../fonts/atlas_typewriter/AtlasTypewriter-Bold.otf');
+}
+@font-face {
+    font-family: 'AtlasTypewriter-Bold';
+    font-display: block;
+    src: local('AtlasTypewriter-Bold'), url('../../fonts/atlas_typewriter/AtlasTypewriter-Bold.otf');
+}
+@font-face {
+    font-family: 'AtlasTypewriter-Bold';
+    font-display: swap;
+    src: local('AtlasTypewriter-Bold'), url('../../fonts/atlas_typewriter/AtlasTypewriter-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Druk-Super';
+    font-display: auto;
+    src: local('Druk-Super'), url('../../fonts/druk/Druk-Super.otf');
+}
+@font-face {
+    font-family: 'Druk-Super';
+    font-display: block;
+    src: local('Druk-Super'), url('../../fonts/druk/Druk-Super.otf');
+}
+@font-face {
+    font-family: 'Druk-Super';
+    font-display: swap;
+    src: local('Druk-Super'), url('../../fonts/druk/Druk-Super.otf');
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.h-100 {
+    height: 100vh !important;
+}
+
+.font-AtlasGrotesk {
+    font-family: AtlasGrotesk-Regular, sans-serif !important;
+}
+
+.font-ag {
+    font-family: AtlasGrotesk-Regular, sans-serif !important;
+}
+
+.font-at {
+    font-family: AtlasTypewriter-Bold, sans-serif !important;
+}
+
+.font-ds {
+    font-family: Druk-Super, sans-serif !important;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: AtlasGrotesk-Regular, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Druk-Super, sans-serif !important;
+}
+
+.title-header {
+    font-family: Druk-Super, sans-serif !important;
+}
+
+.nav-item {
+    font-family: AtlasTypewriter-Bold, sans-serif !important;
+}
+
+.bg-orangered {
+    background-color: orangered !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.p-t-0 {
+    padding-top: 0 !important;
+}
+
+.p-b-0 {
+    padding-bottom: 0 !important;
+}
+
+.p-t-20 {
+    padding-top: 20px !important;
+}
+
+.border-orangered {
+    border: 3px solid orangered !important;
+}
+
+.btn-orangered {
+    border-color: orangered !important;
+    color: orangered !important;
+    background-color: white !important;
+}
+
+.border-top-white {
+    border-top: 3px solid white !important;
+}
+
+.border-bottom-white {
+    border-bottom: 3px solid white !important;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.f-18 {
+    font-size: 18px !important;
+}
+
+/* ----- All Boats ----- */
+.all-boats-item:hover {
+    background-color: orangered !important;
+    color: #FFFFFF !important;
+}
+
+.all-boats-item:hover > .row > div > button {
+    color: #FFFFFF !important;
+}
+
+.all-boats-item:hover * a {
+    background-color: #FFFFFF;
+    color: #000000 !important;
+}
+
+/* --------------------- */
+
+@media (max-width: 576px) {
+    /*#navbar-desktop {*/
+        /*display: none;*/
+    /*}*/
+
+    .title-header {
+        font-size: 45px !important;
+    }
+
+    .title-boat-detail {
+        font-family: "Forza-Bold", sans-serif !important;
+        font-size: 25px !important;
+    }
+
+    .sub-header {
+        font-size: 25px !important;
+    }
+
+    .sub-header-small {
+        font-size: 20px !important;
+    }
+
+    .description, .card-description {
+        font-size: 14px !important;
+    }
+
+    .small-title {
+        font-size: 11px !important;
+    }
+
+    .font-explore-title {
+        font-family: "Forza-Bold", sans-serif !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+    }
+
+    .text-over-image-center {
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        transform: translate(-25%, -30%);
+    }
+
+    .button-over-image-center {
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        transform: translate(-80%, -80%);
+        width: 100%;
+    }
+
+    .title-content {
+        font-size: 43px !important;
+        letter-spacing: 2px;
+    }
+
+    .title-large {
+        font-size: 52px !important;
+        letter-spacing: 2px;
+    }
+
+    .content {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+    }
+
+    .btn-axis {
+        background-color: transparent;
+    !important;
+        font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+        font-size: 14px !important;
+        border: 3px solid orangered;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding: 20px 40px 20px 40px !important;
+
+        -moz-border-image: -moz-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        border-image: linear-gradient(to bottom, #FF601C 0%, #C40000 100%);
+        border-image-slice: 1;
+    }
+
+    .glance-content {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: 576px) {
+    /*#navbar-mobile {*/
+        /*display: none;*/
+    /*}*/
+
+    .nav-link {
+        font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+        font-size: 15px !important;
+    }
+
+    .title-header {
+        font-size: 64px !important;
+    }
+
+    .sub-header-small {
+        font-size: 18px !important;
+    }
+
+    .text-over-image-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .button-over-image-center {
+        position: absolute;
+        top: 85%;
+        left: 85%;
+        transform: translate(-85%, -85%);
+        width: 100%;
+    }
+
+    .glance-content {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+    }
+
+    .btn-axis {
+        background-color: transparent;
+    !important;
+        font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+        font-size: 14px !important;
+        border: 3px solid orangered;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding: 20px 40px 20px 40px !important;
+
+        -moz-border-image: -moz-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        border-image: linear-gradient(to bottom, #FF601C 0%, #C40000 100%);
+        border-image-slice: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-axis {
+        background-color: transparent;
+    !important;
+        font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+        font-size: 14px !important;
+        border: 3px solid orangered;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding: 20px 40px 20px 40px !important;
+
+        -moz-border-image: -moz-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        border-image: linear-gradient(to bottom, #FF601C 0%, #C40000 100%);
+        border-image-slice: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-axis {
+        background-color: transparent;
+    !important;
+        font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+        font-size: 14px !important;
+        border: 3px solid orangered;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding: 20px 40px 20px 40px !important;
+
+        -moz-border-image: -moz-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        border-image: linear-gradient(to bottom, #FF601C 0%, #C40000 100%);
+        border-image-slice: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block !important;
+    }
+
+    .small-title {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        letter-spacing: 2px;
+    }
+
+    .font-explore-title {
+        font-weight: bold !important;
+        font-size: 22px !important;
+    }
+
+    .title-content {
+        font-size: 54px !important;
+        letter-spacing: 2px;
+    }
+
+    .title-large {
+        font-size: 90px !important;
+        letter-spacing: 2px;
+    }
+
+    .content {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+    }
+
+    .btn-axis {
+        background-color: transparent;
+    !important;
+        font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+        font-size: 14px !important;
+        border: 3px solid orangered;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding: 20px 40px 20px 40px !important;
+
+        -moz-border-image: -moz-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        border-image: linear-gradient(to bottom, #FF601C 0%, #C40000 100%);
+        border-image-slice: 1;
+    }
+
+    .glance-content {
+        font-size: 35px !important;
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block !important;
+    }
+
+    .title-header {
+        font-size: 64px !important;
+    }
+
+    .title-boat-detail {
+        font-family: "Forza-Bold", sans-serif !important;
+        font-size: 48px !important;
+    }
+
+    .sub-header {
+        font-size: 48px !important;
+    }
+
+    .sub-header-small {
+        font-size: 25px !important;
+    }
+
+    .description, .card-description {
+        font-size: 18px !important;
+    }
+
+    .small-title {
+        font-size: 16px !important;
+    }
+
+    .font-explore-title {
+        font-family: "Forza-Bold", sans-serif !important;
+        font-weight: bold !important;
+        font-size: 22px !important;
+    }
+
+    .glance-content {
+        font-size: 35px !important;
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block !important;
+    }
+
+    .title-header {
+        font-size: 80px !important;
+    }
+
+    .title-boat-detail {
+        font-family: "Forza-Bold", sans-serif !important;
+        font-size: 60px !important;
+    }
+
+    .sub-header {
+        font-size: 60px !important;
+    }
+
+    .sub-header-small {
+        font-size: 35px !important;
+    }
+
+    .description, .card-description {
+        font-size: 18px !important;
+    }
+
+    .small-title {
+        font-size: 20px !important;
+    }
+
+    .font-explore-title {
+        font-family: "Forza-Bold", sans-serif !important;
+        font-weight: bold !important;
+        font-size: 34px !important;
+    }
+
+    .content {
+        font-size: 15px !important;
+        letter-spacing: 2px;
+    }
+
+    .btn-axis {
+        background-color: transparent;
+    !important;
+        font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+        font-size: 14px !important;
+        border: 3px solid orangered;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding: 20px 40px 20px 40px !important;
+
+        -moz-border-image: -moz-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #FF601C 0%, #FF601C 100%);
+        border-image: linear-gradient(to bottom, #FF601C 0%, #C40000 100%);
+        border-image-slice: 1;
+    }
+
+    .glance-content {
+        font-size: 35px !important;
+        letter-spacing: 2px;
+    }
+}
+
+.font-at {
+    font-family: 'AtlasTypewriter-Bold', sans-serif;
+}
+
+.btn-axis:hover {
+    color: black !important;
+}
+
+.hover-white:hover {
+    color: white !important;
+}
+
+.border-white {
+    border: 3px solid white !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.home-section-bg {
+    /* The image used */
+    background-image: url("https://cdn.malibuboats.com/2018/Axis Homepage Updates/hero-cinematic-split-right_A22_2019.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clear-float {
+    clear: both;
+}
+
+/*--- Modal ---*/
+
+/* Modal */
+.modal-content.country-list-content {
+    border-radius: unset;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+span.white-color {
+    color: white;
+}
+
+.country-list a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    transition: all 0.2s;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+.country-list a:hover {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.country-list a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.country-list a img {
+    display: inline-block;
+    width: 3rem;
+    height: auto;
+}
+
+.country-list a div {
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+
+.modal-body {
+    color: rgb(0, 0, 0);
+    padding: 20px 50px;
+}
+
+/*--- End Modal ---*/
+
+/*--- Navbar ---*/
+
+.left-side {
+    float: left;
+    display: inline-block;
+
+}
+
+.right-side {
+    float: right;
+    display: inline-block;
+}
+
+.nav-lang {
+    font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+    float: left;
+    font-weight: 600;
+    padding: 0;
+    color: #131314;
+}
+
+.nav-lang:hover:before {
+    width: 100%;
+    background: #131314;
+    transition: width .25s ease;
+}
+
+.nav-lang:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+/*--- End Navbar ---*/
+
+.btn-axis {
+    font-family: 'AtlasTypewriter-Bold', sans-serif !important;
+    padding: 20px;
+}
+
+/* 2019-02-17 */
+.font-16 {
+    font-size: 16px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+/* 1b, 1c start */
+.modal-content.country-list-content {
+    border-radius: unset;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+span.white-color {
+    color: white;
+}
+
+.country-list a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    transition: all 0.2s;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+.country-list a:hover {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.country-list a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.country-list a img {
+    display: inline-block;
+    width: 3rem;
+    height: auto;
+}
+
+.country-list a div {
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+
+.clear-float {
+    clear: both;
+}
+
+/* 1b, 1c end */
+
+.navbar-collapse:after, .navbar-collapse.collapse {
+    background-color: #0b1216 !important;
+    border-color: #0b1216 !important;
+}
+
+.page-loading {
+    height: 100vh;
+    background-color: #FF4501;
+}
+
+.page-loading > .logo-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-loading > .logo-loading > div > h4 > .text-loading {
+    position: relative;
+    color: rgba(0, 0, 0, .3) !important;
+}
+
+@media (min-width: 576px) {
+    .page-loading > .logo-loading > .logo-file {
+        width: 200px;
+        height: 76px;
+    }
+
+    .page-loading > .logo-loading > div > h4 > .text-loading:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #fff;
+        max-width: 7em;
+        animation: loading 8s linear;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-loading > .logo-loading > .logo-file {
+        width: 200px;
+        height: 76px;
+    }
+
+    .page-loading > .logo-loading > div > h4 > .text-loading:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #fff;
+        max-width: 7em;
+        animation: loading 8s linear;
+    }
+}
+
+@media (min-width: 992px) {
+    .page-loading > .logo-loading > .logo-file {
+        width: 400px;
+        height: 152px;
+    }
+
+    .page-loading > .logo-loading > div > h4 > .text-loading:before {
+        content: attr(data-text);
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #fff;
+        max-width: 7em;
+        animation: loading 2s linear;
+    }
+}
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
